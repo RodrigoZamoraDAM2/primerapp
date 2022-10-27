@@ -12,7 +12,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
         android:text="Pon tu nombre y luego te llamo"
-        android:textColor="@color/design_default_color_primary"
+        android:textColor="@color/purple_700"
         android:textSize="100px" />
 
     <Space
