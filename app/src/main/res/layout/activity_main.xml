@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytContenedor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical" >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Pon tu nombre y luego te llamo"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="100px" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="143dp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="199dp"
+        android:layout_height="93dp"
+        android:layout_gravity="center"
+        android:text="aceptar" />
+
+</LinearLayout>
